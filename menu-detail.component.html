@@ -1,0 +1,9 @@
+<div *ngIf="menu">
+  <h2>{{<menu></menu>.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{menu.id}}</div>
+  <div>
+      <label for="menu-name">Menu name: </label>
+      <input id="menu-name" [(ngModel)]="menu.name" placeholder="Menu name"/>
+    </div>
+    <button type="button" (click)="goback()">go back</button>
+  </div>

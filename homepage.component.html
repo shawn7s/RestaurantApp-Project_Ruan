@@ -1,0 +1,15 @@
+<h2>Italian Restaurant</h2>
+<div class="Restaurant-menu">
+    <a *ngFor="let menu of menu"
+        routerLink="/detail/{{menu.id}}">
+        {{menu.name}}
+    </a>
+    <div>
+        <img [src]="myimage" width ="1000" height ="562.5" alt="">
+     </div>
+     
+     <div>
+       <h2>Welcome to the Italian Food experience in Richmond Area</h2>
+       <h2><button type="button" class="btn btn-primary">Book A Table</button></h2>
+     </div>
+</div>

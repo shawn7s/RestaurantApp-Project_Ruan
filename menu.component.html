@@ -1,0 +1,17 @@
+<h2>Menu</h2>
+<ul class="menu">
+    <li *ngFor="let menu of menu">
+        <a routerLink="/detail/{{menu.id}}">
+            <span class="badge">{{menu.id}}</span> {{menu.name}}
+        </a>
+            <p>
+            <img [src]="myimage1" width ="1000" height ="562.5" alt="">
+            <img [src]="myimage2" width ="1000" height ="562.5" alt="">
+            <img [src]="myimage3" width ="1000" height ="562.5" alt="">
+        </p>
+        
+    </li>
+</ul>
+
+
+
